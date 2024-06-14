@@ -12,59 +12,137 @@
   
   <style type="text/css">
     body{background: rgb(223, 223, 224) !important;}
+ 
+    #mainDiv{
+      margin-top: 150px;
+      margin-left: 10px;
+      margin: 30px;
+    }
+
+    #name{
+     font-weight: bold;
+    }
+
+    #fNameLName{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #firstTestimonial{
+      padding-bottom: 65px;
+    }
+
+  #secondTestimonial{
+    position: relative;
+    left: 739px;
+    bottom: 343px;
+    padding-bottom: 134px;
+  }
+
+
+  #thirdTestimonial{
+    position: relative;
+    bottom: 245px;
+    padding-bottom: 120px;
+  }
+ 
+  #fourthTestimonial{
+    position: relative;
+    bottom: 483px;
+    left: 375px;
+    padding-bottom: 94px;
+  }
+
+  #fifthTestimonial{
+    position: relative;
+    bottom: 1165px;
+    left: 1115px;
+    padding-bottom: 299px;
+  }
+
+  #title{
+    position: relative;
+    bottom: 20px;
+  }
+
+  #quote{
+    position: relative;
+    bottom: 25px;
+  }
+
+  #testimonialText{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #testimonialPara{
+
+  }
     </style>
   
 </head>
 <body>
 
-  <div class="d-flex align-items-center">
-  <div class="bg-info rounded w-50">
+  <!-- creating a div to hold the testimonials that are inside seperate divs-->
 
-  
-  Daniel Clifford
-  Verified Graduate
+  <div id="mainDiv">
+  <div id="firstTestimonial" class="bg-info rounded w-50">
 
-  I received a job offer mid-course, and the subjects I learned were current, if not more so, 
-  in the company I joined. I honestly feel I got every penny’s worth.
 
-  “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
-  transition and have heard some people who had an amazing experience here. I signed up 
-  for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
-  The next 12 weeks was the best - and most grueling - time of my life. Since completing 
-  the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+  <p id="name">Daniel Clifford</p>
+  <p id="title">Verified Graduate</p>
+
+  <div id="testimonialText"> <h4 id="quote">I received a job offer mid-course, and the subjects I learned <br/>
+     were current, if not more so, in the company I joined. I <br/>
+     honestly feel I got every penny’s worth.</h4></div>
+
+     <div id="testimonialText">
+
+  “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a <br/>
+  transition and have heard some people who had an amazing experience here. I signed up for <br/>
+  the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 <br/>
+  weeks was the best - and most grueling - time of my life. Since completing the course, I’ve <br/> 
+  successfully switched careers, working as a Software Engineer at a VR startup. ”
+</div>
 
   </div>
 
 
-<div class="bg-secondary rounded w-25">
-  Jonathan Walters
-  Verified Graduate
+<div id="secondTestimonial" class="bg-secondary rounded w-25">
+  <p id="name">Jonathan Walters<br/></p>
+  <p id="title">Verified Graduate</p>
 
-  The team was very supportive and kept me motivated
+  <h4>The team was very supportive and kept me motivated</h4>
 
-  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-  for a big company. This was one of the best investments I’ve made in myself. ”
+  “ I started as a total newbie with <br/>
+  virtually no coding skills. I now work <br/>
+  as a mobile engineer for a big <br/>
+  company. This was one of the best investments I’ve made in myself. ”
 
 </div>
 
-<div class="bg-white rounded w-25">
 
-  Jeanette Harmon
-  Verified Graduate
+<div id="thirdTestimonial" class="bg-white rounded w-25">
 
-  An overall wonderful and rewarding experience
+  <p id="name">Jeanette Harmon<br/></p>
+  <p id="title">Verified Graduate</p>
+
+  <h4>An overall wonderful and rewarding experience</h4>
 
   “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
   while doing something I love. ”
 
 </div>
 
-<div class="bg-dark text-white rounded w-50">
-  Patrick Abrams
-  Verified Graduate
+<div id="fourthTestimonial" class="bg-dark text-white rounded w-50">
+  <p id="name">Patrick Abrams<br/></p>
+  <p id="title">Verified Graduate</p>
 
-  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-  learning from their experiences was easy.
+  <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+  learning from their experiences was easy.</h4>
 
   “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
   gave me the confidence necessary to be able to go out in the world and present myself as a capable 
@@ -73,12 +151,12 @@
 
 </div>
 
-<div class="bg-white rounded w-25 ">
+<div id="fifthTestimonial" class="bg-white rounded w-25">
 
-  Kira Whittle
-  Verified Graduate
+  <p id="name">Kira Whittle<br/></p>
+  <p id="title">Verified Graduate</p>
 
-  Such a life-changing experience. Highly recommended!
+  <h4>Such a life-changing experience. Highly recommended!</h4>
 
   “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
   professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
