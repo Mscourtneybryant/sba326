@@ -30,25 +30,32 @@
 
     #firstTestimonial{
       padding-bottom: 65px;
+      background-color: rgb(138, 7, 214);
+      background-image: url(images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: 500px;
+      background-position-y: top;
+      background-size: 130px;
     }
 
   #secondTestimonial{
     position: relative;
     left: 739px;
-    bottom: 343px;
-    padding-bottom: 134px;
+    bottom: 394px;
+    padding-bottom: 66px;
+    background-color: rgb(73, 74, 83);
   }
 
 
   #thirdTestimonial{
     position: relative;
-    bottom: 245px;
-    padding-bottom: 120px;
+    bottom: 360px;
+    padding-bottom: 80px;
   }
  
   #fourthTestimonial{
     position: relative;
-    bottom: 483px;
+    bottom: 745px;
     left: 375px;
     padding-bottom: 94px;
   }
@@ -71,15 +78,95 @@
   }
 
   #testimonialText{
-   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  #testimonialPara{
+  #testimonialText2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  #testimonialText3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+  }
+
+  #testimonialHdr3{
+    position: relative;
+    left: 55px;
+    bottom: 10px;
+  }
+
+  #testQuote{
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    left: 55px;
+    bottom: 15px;
+  }
+
+  #picNtext{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-bottom: 35px;
+  }
+
+  #nameInfo{
+    padding-left: 35px;
+    position: relative;
+    top: 20px;
+  }
+
+  #nameInfo2{
+    padding-left: 55px;
+    position: relative;
+    top: 20px;
+  }
+
+  #pic2{
+    position: relative;
+    left: 31px;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.479);
+  }
+
+  #pic{
+    position: relative;
+    left: 17px;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.479);
+  }
+
+  
+  #pic4{
+    position: relative;
+    left: 17px;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+    border: solid;
+    border-color: rgba(138, 7, 214, 0.788);
+  }
+
+  .picText{
+    position: relative;
+    top: 10px;
   }
     </style>
   
@@ -89,57 +176,79 @@
   <!-- creating a div to hold the testimonials that are inside seperate divs-->
 
   <div id="mainDiv">
-  <div id="firstTestimonial" class="bg-info rounded w-50">
+  <div id="firstTestimonial" class="rounded w-50">
 
+<div id="picNtext" class="justify-content-left">
+  <img id="pic" class="rounded-circle" src="images/image-daniel.jpg"/>
+  <div id="nameInfo" class="d-flex flex-column"><p class="text-white" id="name">Daniel Clifford</p>
+  <p class="text-white" id="title">Verified Graduate</p>
+  </div></div>
 
-  <p id="name">Daniel Clifford</p>
-  <p id="title">Verified Graduate</p>
-
-  <div id="testimonialText"> <h4 id="quote">I received a job offer mid-course, and the subjects I learned <br/>
+  <div id="testimonialText"> <h4 id="quote" class="text-white">I received a job offer mid-course, and the subjects I learned <br/>
      were current, if not more so, in the company I joined. I <br/>
      honestly feel I got every penny’s worth.</h4></div>
 
-     <div id="testimonialText">
-
+     <div id="testimonialText" class="text-white">
   “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a <br/>
   transition and have heard some people who had an amazing experience here. I signed up for <br/>
   the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 <br/>
   weeks was the best - and most grueling - time of my life. Since completing the course, I’ve <br/> 
   successfully switched careers, working as a Software Engineer at a VR startup. ”
 </div>
-
   </div>
 
 
-<div id="secondTestimonial" class="bg-secondary rounded w-25">
-  <p id="name">Jonathan Walters<br/></p>
-  <p id="title">Verified Graduate</p>
+<div id="secondTestimonial" class=" rounded w-25">
+  <div id="picNtext" class="justify-content-left">
+  <img id="pic2" class="rounded-circle" id="pic" src="images/image-jonathan.jpg"/>
+  <div id="nameInfo2" class="d-flex flex-column"><p class="text-white" id="name">Jonathan Walters<br/></p>
+  <p class="text-white" id="title">Verified Graduate</p></div>
+</div>
 
-  <h4>The team was very supportive and kept me motivated</h4>
+<div id="testQuote"><h4 class="text-white">The team was very<br/>
+   supportive and kept me motivated</h4>
+  </div>
 
-  “ I started as a total newbie with <br/>
+  <div id="testimonialText2" class="text-white">
+    “ I started as a total newbie with <br/>
   virtually no coding skills. I now work <br/>
   as a mobile engineer for a big <br/>
-  company. This was one of the best investments I’ve made in myself. ”
-
+  company. This was one of the best<br/>
+   investments I’ve made in myself. ”
+</div>
 </div>
 
 
 <div id="thirdTestimonial" class="bg-white rounded w-25">
 
-  <p id="name">Jeanette Harmon<br/></p>
-  <p id="title">Verified Graduate</p>
 
-  <h4>An overall wonderful and rewarding experience</h4>
 
-  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
-  while doing something I love. ”
+    <div id="picNtext" class="picText justify-content-left">
+    <img id="pic" class="rounded-circle" id="pic" src="images/image-jeanette.jpg"/>
+    <div id="nameInfo" class="d-flex flex-column"><p id="name">Jeanette Harmon<br/></p>
+    <p id="title">Verified Graduate</p></div>
+  </div>
+
+  <div id="testimonialHdr3">
+  <h4>An overall wonderful <br/> and rewarding <br/> experience</h4></div>
+
+
+  <div id="testimonialText3">
+  “ Thank you for the wonderful <br/>
+  experience! I now have a job I really <br/>
+  enjoy, and make a good living while <br/>
+  doing something I love. ”</div>
 
 </div>
 
 <div id="fourthTestimonial" class="bg-dark text-white rounded w-50">
-  <p id="name">Patrick Abrams<br/></p>
-  <p id="title">Verified Graduate</p>
+
+  <div id="picNtext" class="picText justify-content-left">
+    <img id="pic4" class="rounded-circle" id="pic" src="images/image-patrick.jpg"/>
+    <div id="nameInfo" class="d-flex flex-column"><p id="name">Patrick Abrams<br/></p>
+    <p id="title">Verified Graduate</p></div>
+  </div>
+
 
   <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
   learning from their experiences was easy.</h4>
